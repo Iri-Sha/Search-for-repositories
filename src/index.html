@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ирина Шамсудинова">
+    <title>Search for repositories</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__title">Блок поиска репозиториев GitHub по подстроке</h1>
+    </header>
+
+    <main class="content">
+      <section class="form">
+        <h2 class="form__title">Поиск</h2>
+        <form class="form_search" name="formSearch" novalidate>
+          <input id="input" name="search" class="form__input form__input_search" type="text" placeholder="Введите запрос" minlength="2" maxlength="256" required>
+          <span id="input-error" class="search__error"></span>
+          <span id="input-no-results" class="search__no-results">Ничего не найдено</span>
+          <button class="form_button" type="submit">Найти</button>
+        </form>
+      </section>
+
+      <section class="elements" aria-label="Результаты поиска">
+        <ul class="elements__result">
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2023. Shamsudinova Irina</p>
+    </footer>
+
+    <template id="card-template">
+      <li class="card">
+        <h2 class="card-title"><a class="card-link" href="" target="_blank" rel></a></h2>
+        <p class="card-name"></p>
+        <p class="card-text"></p>
+      </li>
+    </template>
+  </body>
+</html>
