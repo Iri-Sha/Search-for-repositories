@@ -15,28 +15,27 @@
       <section class="form">
         <h2 class="form__title">Поиск</h2>
         <form class="form_search" name="formSearch" novalidate>
-          <input id="input" name="search" class="form__input form__input_search" type="text" placeholder="Введите запрос" minlength="2" maxlength="256" required>
+          <input id="input" name="search" class="form__input form__input_search" type="search" placeholder="Введите запрос" minlength="2" maxlength="256" required>
           <span id="input-error" class="search__error"></span>
-          <span id="input-no-results" class="search__no-results">Ничего не найдено</span>
           <button class="form_button" type="submit">Найти</button>
         </form>
       </section>
 
       <section class="elements" aria-label="Результаты поиска">
+        <p class="elements-error">Ничего не найдено</p>
         <ul class="elements__result">
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <p class="footer__copyright">&copy; 2023. Shamsudinova Irina</p>
     </footer>
 
     <template id="card-template">
       <li class="card">
-        <h2 class="card-title"><a class="card-link" href="" target="_blank" rel></a></h2>
+        <a class="card-title" href="" target="_blank" rel></a>
         <p class="card-name"></p>
-        <p class="card-text"></p>
+        <p class="card-description"></p>
       </li>
     </template>
   </body>

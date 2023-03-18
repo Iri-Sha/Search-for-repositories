@@ -22,6 +22,5 @@ export const api = new Api({
   baseUrl: "https://api.github.com/search/repositories?q=",
   headers: {
     Accept: "application/vnd.github+json",
-    //auth: 'YOUR-TOKEN',
   },
 });
